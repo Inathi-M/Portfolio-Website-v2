@@ -4,6 +4,34 @@ import AVTR1 from "../../assets/avatar1.jpg";
 import AVTR2 from "../../assets/avatar2.jpg";
 import AVTR3 from "../../assets/avatar3.jpg";
 import AVTR4 from "../../assets/avatar4.jpg";
+
+const data = [
+  {
+    avatar: AVTR1,
+    name: "Tina Show",
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, excepturi!",
+  },
+  {
+    avatar: AVTR2,
+    name: "Shatta Wale",
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, excepturi!",
+  },
+  {
+    avatar: AVTR3,
+    name: "Kwame Despite",
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, excepturi!",
+  },
+  {
+    avatar: AVTR4,
+    name: "Nana Ama McBrown",
+    review:
+      "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius, excepturi!",
+  },
+];
+
 const Courses = () => {
   return (
     <section id="courses">
@@ -11,42 +39,17 @@ const Courses = () => {
       <h2>Courses</h2>
 
       <div className="container courses__container">
-        <article className="course">
-          <div className="client__avatar">
-            <img src={AVTR1} alt="Avatar One" />
-            <h5 className="client__name">Ernerst Achiever</h5>
-            <small className="client__review">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae,
-              nostrum dolorem odio incidunt nesciunt ipsam placeat aliquam ut,
-              dicta fugit quaerat rem! Vitae dignissimos est reprehenderit
-              dolorum enim incidunt veritatis!
-            </small>
-          </div>
-        </article>
-        <article className="course">
-          <div className="client__avatar">
-            <img src={AVTR1} alt="Avatar One" />
-            <h5 className="client__name">Ernerst Achiever</h5>
-            <small className="client__review">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae,
-              nostrum dolorem odio incidunt nesciunt ipsam placeat aliquam ut,
-              dicta fugit quaerat rem! Vitae dignissimos est reprehenderit
-              dolorum enim incidunt veritatis!
-            </small>
-          </div>
-        </article>
-        <article className="course">
-          <div className="client__avatar">
-            <img src={AVTR1} alt="Avatar One" />
-            <h5 className="client__name">Ernerst Achiever</h5>
-            <small className="client__review">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae,
-              nostrum dolorem odio incidunt nesciunt ipsam placeat aliquam ut,
-              dicta fugit quaerat rem! Vitae dignissimos est reprehenderit
-              dolorum enim incidunt veritatis!
-            </small>
-          </div>
-        </article>
+        {data.map(({ avatar, name, review }, index) => {
+          return (
+            <article key={index} className="course">
+              <div className="client__avatar">
+                <img src={avatar} />
+              </div>
+              <h5 className="client__name">{name}</h5>
+              <small className="client__review">{review}</small>
+            </article>
+          );
+        })}
       </div>
     </section>
   );
