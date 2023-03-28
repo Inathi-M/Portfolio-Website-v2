@@ -36,17 +36,15 @@ const About = () => {
             </article>
           </div>
           <p>
-            I am a 22 year old Software Developer hailing from Khayelitsha, Cape
-            Town. For the better part of my career, I was pursuing a Degree in
-            Computer Science, majoring in Computer Science and Computer
-            Engineering, however due to several factors in my personal life, my
-            academic life was affected, and I recently lost my place at UCT.
-            However, I have never been a quitter, and I am currently doing
-            freelance work, teaching myself frameworks like Node.js, React and
-            Springboot, and languages like CSS,Javascript, HTML and C++ because
-            they were never the main focus at University, as I upskill myself
-            through building personal projects, I hope get myself industry ready
-            for my first job.
+            As a passionate software developer from Cape Town, I'm constantly
+            learning and upskilling myself. I've been teaching myself a variety
+            of programming languages such as JavaScript, C++, and Python, while
+            also familiarizing myself with popular frameworks like Node.js,
+            React, Springboot, and Angular. By building personal projects, I'm
+            gaining practical experience and am determined to make myself an
+            industry-ready software developer. Despite facing setbacks, I remain
+            focused on achieving my goals and making a positive impact in the
+            tech industry.
           </p>
           <a href="#contact" className="btn btn-primary">
             Contact Me

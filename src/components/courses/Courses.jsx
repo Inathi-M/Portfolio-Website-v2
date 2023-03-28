@@ -5,6 +5,14 @@ import AVTR2 from "../../assets/avatar2.jpg";
 import AVTR3 from "../../assets/avatar3.jpg";
 import AVTR4 from "../../assets/avatar4.jpg";
 
+//import Swiper core and required modules
+import { Pagination } from "swiper";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+
+//Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
 const data = [
   {
     avatar: AVTR1,
@@ -38,19 +46,19 @@ const Courses = () => {
       <h5>Coursework completed in University</h5>
       <h2>Courses</h2>
 
-      <div className="container courses__container">
+      <Swiper className="container courses__container">
         {data.map(({ avatar, name, review }, index) => {
           return (
-            <article key={index} className="course">
+            <SwiperSlide key={index} className="course">
               <div className="client__avatar">
                 <img src={avatar} />
               </div>
               <h5 className="client__name">{name}</h5>
               <small className="client__review">{review}</small>
-            </article>
+            </SwiperSlide>
           );
         })}
-      </div>
+      </Swiper>
     </section>
   );
 };
