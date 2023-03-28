@@ -46,7 +46,14 @@ const Courses = () => {
       <h5>Coursework completed in University</h5>
       <h2>Courses</h2>
 
-      <Swiper className="container courses__container">
+      <Swiper
+        className="container courses__container"
+        //Install Swiper modules
+        modules={[Pagination]}
+        spaceBetween={40}
+        slidesPerView={1}
+        pagination={{ clickable: true }}
+      >
         {data.map(({ avatar, name, review }, index) => {
           return (
             <SwiperSlide key={index} className="course">
