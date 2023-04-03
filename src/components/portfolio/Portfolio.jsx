@@ -29,27 +29,6 @@ const data = [
     github: "https://github.com",
     demo: "https://dribble.com",
   },
-  {
-    id: 4,
-    image: IMG4,
-    title: "Maintaining tasks and tracking progress",
-    github: "https://github.com",
-    demo: "https://dribble.com",
-  },
-  {
-    id: 5,
-    image: IMG5,
-    title: "Charts templates & infographics in Figma",
-    github: "https://github.com",
-    demo: "https://dribble.com",
-  },
-  {
-    id: 6,
-    image: IMG6,
-    title: "Charts templates & infographics in Figma",
-    github: "https://github.com",
-    demo: "https://dribble.com",
-  },
 ];
 const Portfolio = () => {
   return (

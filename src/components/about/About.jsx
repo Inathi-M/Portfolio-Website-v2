@@ -42,9 +42,7 @@ const About = () => {
             also familiarizing myself with popular frameworks like Node.js,
             React, Springboot, and Angular. By building personal projects, I'm
             gaining practical experience and am determined to make myself an
-            industry-ready software developer. Despite facing setbacks, I remain
-            focused on achieving my goals and making a positive impact in the
-            tech industry.
+            industry-ready software developer.
           </p>
           <a href="#contact" className="btn btn-primary">
             Contact Me
