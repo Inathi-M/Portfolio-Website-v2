@@ -1,28 +1,31 @@
 import React from "react";
 import "./portfolio.css";
-import IMG1 from "../../assets/portfolio1.jpg";
-import IMG2 from "../../assets/portfolio2.jpg";
-import IMG3 from "../../assets/portfolio3.jpg";
+import Figma from "../../assets/Figma.PNG";
+import TypingTutor from "../../assets/TypingTutor.PNG";
+import PortPic from "../../assets/PortPic.PNG";
 
 const data = [
   {
     id: 1,
-    image: IMG1,
-    title: "Crypto Currency DashBoard & Financial Visualization",
+    image: Figma,
+    title:
+      "I designed the High Fidelity prototype of my alphabet book app using Figma. ",
     github: "https://github.com",
     demo: "https://dribble.com",
   },
   {
     id: 2,
-    image: IMG2,
-    title: "  Charts templates & infographics in Figma",
+    image: TypingTutor,
+    title:
+      "  Created the Falling words game using Java and the concept of Parallel Programming.",
     github: "https://github.com",
     demo: "https://dribble.com",
   },
   {
     id: 3,
-    image: IMG3,
-    title: "Figma dashboard UI kit for data design web apps",
+    image: PortPic,
+    title:
+      "Created my personal website using JavaScript, CSS3 and HTML5, and React",
     github: "https://github.com",
     demo: "https://dribble.com",
   },
