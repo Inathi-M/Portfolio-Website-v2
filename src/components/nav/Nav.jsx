@@ -46,6 +46,13 @@ const Nav = () => {
         <RiServiceLine />
       </a>
       <a
+        href="#courses"
+        onClick={() => setActiveNav("#courses")}
+        className={activeNav === "#courses" ? "active" : ""}
+      >
+        <RiServiceLine />
+      </a>
+      <a
         href="#contact"
         onClick={() => setActiveNav("#contact")}
         className={activeNav === "#contact" ? "active" : ""}
