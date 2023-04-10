@@ -4,20 +4,20 @@ import { MdOutlineEmail } from "react-icons/md";
 import { BsWhatsapp } from "react-icons/bs";
 import { RiMessengerLine } from "react-icons/ri";
 import { useRef } from "react";
-//import emailjs from "emailjs-com";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
-  /*const form = useRef();
+  const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_bzch80t",
+        "template_46dzfnx",
         form.current,
-        "YOUR_USER_ID"
+        "jRj8YA6zSoRP1XBAc"
       )
       .then(
         (result) => {
@@ -27,7 +27,8 @@ const Contact = () => {
           console.log(error.text);
         }
       );
-  };*/
+    e.target.reset();
+  };
 
   return (
     <section id="contact">
@@ -47,7 +48,7 @@ const Contact = () => {
             <h4>WhatsApp</h4>
             <h5>+27 62 033 8048</h5>
             <a href="https://api.whatsapp.com/send?phone=+27620338048">
-              Send me an E-mail
+              Send me a WhatsApp message
             </a>
           </article>
           <article className="contact__option">
@@ -58,7 +59,7 @@ const Contact = () => {
           </article>
         </div>
         {/**END OF CONTACT OPTIONS */}
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
             name="name"
