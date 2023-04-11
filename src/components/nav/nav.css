@@ -31,3 +31,14 @@ nav a.active {
   background: var(--color-primary);
   color: var(--color-bg);
 }
+
+/*========================MEDIA QUERIES (MEDIUM DEVICES)=================*/
+@media screen and (max-width: 1024px) {
+}
+
+/*========================MEDIA QUERIES (MEDIUM DEVICES)=================*/
+@media screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+}
