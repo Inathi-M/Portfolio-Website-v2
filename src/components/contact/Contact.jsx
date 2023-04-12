@@ -14,6 +14,7 @@ const Contact = () => {
 
     emailjs
       .sendForm(
+
         "service_bzch80t",
         "template_46dzfnx",
         form.current,
@@ -29,7 +30,6 @@ const Contact = () => {
       );
     e.target.reset();
   };
-
   return (
     <section id="contact">
       <h5>Get In Touch</h5>
@@ -48,7 +48,7 @@ const Contact = () => {
             <h4>WhatsApp</h4>
             <h5>+27 62 033 8048</h5>
             <a href="https://api.whatsapp.com/send?phone=+27620338048">
-              Send me a WhatsApp message
+              Send me a WhatsApp messager
             </a>
           </article>
         </div>
