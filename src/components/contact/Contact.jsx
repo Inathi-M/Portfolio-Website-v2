@@ -51,12 +51,6 @@ const Contact = () => {
               Send me a WhatsApp message
             </a>
           </article>
-          <article className="contact__option">
-            <RiMessengerLine className="contact__option-icon" />
-            <h4>Messenger</h4>
-            <h5>Nkosinathi Tshaphile</h5>
-            <a href="https://m.me/nkosinathi.tshaphile">Send me a DM</a>
-          </article>
         </div>
         {/**END OF CONTACT OPTIONS */}
         <form ref={form} onSubmit={sendEmail}>
