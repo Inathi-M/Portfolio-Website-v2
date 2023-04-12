@@ -16,23 +16,23 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <p>Adobe photoshop experience.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <p>Creating logos and branding using Adobe Photoshop.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <p>Creating High Fidelity prototypes using Figma.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <p>Creating High Fidelity prototypes using Sketch.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <p>Creating Low Fidelity prototypes with hand sketching.</p>
             </li>
           </ul>
         </article>
@@ -46,23 +46,23 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <p>Creating mobile applications using Java.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <p>Creating mobile applications using Python.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <p>Creating mobile applications using Kotlin.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <p>Maintaining existing applications.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <p>Adding new features to existing mobile applications.</p>
             </li>
           </ul>
         </article>
@@ -76,23 +76,28 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <p>Using CSS3 for Frontend Development.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <p>Using HTML5 for Frontend Development.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <p>
+                Using React/Angular as frameworks to implement web applications.
+              </p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <p>
+                Using Javascript for FrontEnd development, along with CSS3 AND
+                HTML5.
+              </p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+              <p>Using MongoDB/MySql for backend development.</p>
             </li>
           </ul>
         </article>

@@ -5,6 +5,8 @@ import { AiOutlineUser } from "react-icons/ai";
 import { BiBook } from "react-icons/bi";
 import { RiServiceLine } from "react-icons/ri";
 import { BiMessageSquareDetail } from "react-icons/bi";
+import { MdWorkOutline } from "react-icons/md";
+import { FaUniversity } from "react-icons/fa";
 import { useState } from "react";
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
@@ -37,6 +39,20 @@ const Nav = () => {
         className={activeNav === "#services" ? "active" : ""}
       >
         <RiServiceLine />
+      </a>
+      <a
+        href="#portfolio"
+        onClick={() => setActiveNav("#portfolio")}
+        className={activeNav === "#portfolio" ? "active" : ""}
+      >
+        <MdWorkOutline />
+      </a>
+      <a
+        href="#courses"
+        onClick={() => setActiveNav("#courses")}
+        className={activeNav === "#courses" ? "active" : ""}
+      >
+        <FaUniversity />
       </a>
       <a
         href="#contact"

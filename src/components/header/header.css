@@ -1,6 +1,6 @@
 header {
   height: 100vh;
-  padding-top: 7rem;
+  padding-top: 2rem;
   overflow: hidden;
 }
 
@@ -39,10 +39,10 @@ header {
 /*==============ME=================*/
 .me {
   background: linear-gradient(var(--color-primary), transparent);
-  width: 13rem;
-  height: 13rem;
+  width: 22rem;
+  height: 18rem;
   position: absolute;
-  left: calc(50% - 6rem);
+  left: calc(50% - 11rem);
   margin-top: 4rem;
   border-radius: 10rem 10rem 0 0;
   overflow: hidden;
@@ -62,14 +62,14 @@ header {
 /*========================MEDIA QUERIES (MEDIUM DEVICES)=================*/
 @media screen and (max-width: 1024px) {
   header {
-    height: 68vh;
+    height: 80vh;
   }
 }
 
-/*========================MEDIA QUERIES (MEDIUM DEVICES)=================*/
+/*========================MEDIA QUERIES (SMALL DEVICES)=================*/
 @media screen and (max-width: 600px) {
   header {
-    height: 100vh;
+    height: 90vh;
   }
   .header__socials,
   .scroll__down {

@@ -1,8 +1,8 @@
 import React from "react";
 import "./contact.css";
 import { MdOutlineEmail } from "react-icons/md";
-import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
+import { RiMessengerLine } from "react-icons/ri";
 import { useRef } from "react";
 import emailjs from "emailjs-com";
 
@@ -14,10 +14,11 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+
+        "service_bzch80t",
+        "template_46dzfnx",
         form.current,
-        "YOUR_PUBLIC_KEY"
+        "jRj8YA6zSoRP1XBAc"
       )
       .then(
         (result) => {
@@ -27,6 +28,7 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+    e.target.reset();
   };
   return (
     <section id="contact">
@@ -39,32 +41,19 @@ const Contact = () => {
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
             <h5>tshaphilenkosinathi@gmail.com</h5>
-            <a href="mailto:tshaphilenkosinathi@gmail.com" target="_blank">
-              Send me an E-mail
-            </a>
+            <a href="mailto:tshaphilenkosinathi@gmail.com">Send me an E-mail</a>
           </article>
           <article className="contact__option">
             <BsWhatsapp className="contact__option-icon" />
             <h4>WhatsApp</h4>
             <h5>+27 62 033 8048</h5>
-            <a
-              href="https://api.whatsapp.com/send?phone=+27620338048"
-              target="_blank"
-            >
-              Send me a message
-            </a>
-          </article>
-          <article className="contact__option">
-            <RiMessengerLine className="contact__option-icon" />
-            <h4>Messenger</h4>
-            <h5>Nkosinathi Tshaphile</h5>
-            <a href="https://m.me/nkosinathi.tshaphile" target="_blank">
-              Send me a DM
+            <a href="https://api.whatsapp.com/send?phone=+27620338048">
+              Send me a WhatsApp messager
             </a>
           </article>
         </div>
         {/**END OF CONTACT OPTIONS */}
-        <form action="">
+        <form ref={form} onSubmit={sendEmail}>
           <input
             type="text"
             name="name"
@@ -75,7 +64,7 @@ const Contact = () => {
           <textarea
             name="message"
             rows="7"
-            placeholder="Your Message"
+            placeholder="Your message"
             required
           ></textarea>
           <button type="submit" className="btn btn-primary">
