@@ -10,24 +10,24 @@ const data = [
     image: Figma,
     title:
       "I designed the High Fidelity prototype of my alphabet book app using Figma. ",
-    github: "https://github.com",
-    demo: "https://dribble.com",
+    github: "https://github.com/Inathi-M/Alphabet_Book",
+    demo: "https://youtu.be/Sv8yIM8txeo",
   },
   {
     id: 2,
     image: TypingTutor,
     title:
       "  Created the Falling words game using Java and the concept of Parallel Programming.",
-    github: "https://github.com",
-    demo: "https://dribble.com",
+    github: "https://github.com/Inathi-M/Typing-Tutor",
+    demo: "https://youtu.be/vhUFP0zhwVo",
   },
   {
     id: 3,
     image: PortPic,
     title:
       "Created my personal website using JavaScript, CSS3 and HTML5, and React",
-    github: "https://github.com",
-    demo: "https://dribble.com",
+    github: "https://github.com/Inathi-M/Portfolio-Website ",
+    // demo: "",
   },
 ];
 const Portfolio = () => {
