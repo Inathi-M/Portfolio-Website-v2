@@ -1,4 +1,4 @@
-########## This is my first React Application
+# This is my first React Application
 
 
 The first page is the about page with my Linkedin link, my GitHub and Leetcode links.
