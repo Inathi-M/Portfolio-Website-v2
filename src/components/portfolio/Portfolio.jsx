@@ -3,13 +3,15 @@ import "./portfolio.css";
 import Figma from "../../assets/Figma.PNG";
 import TypingTutor from "../../assets/TypingTutor.PNG";
 import PortPic from "../../assets/PortPic.PNG";
+import Snake from "../../assets/Snake.PNG";
+import MeanFilter from "../../assets/MeanFilter.PNG";
 
 const data = [
   {
     id: 1,
-    image: Figma,
+    image: Snake,
     title:
-      "I designed the High Fidelity prototype of my alphabet book app using Figma. ",
+      "This is a Snake Game created by C# in Visual Studio 2022. I really love this game and had fun making it. ",
     github: "https://github.com/Inathi-M/Alphabet_Book",
     demo: "https://youtu.be/Sv8yIM8txeo",
   },
@@ -23,9 +25,9 @@ const data = [
   },
   {
     id: 3,
-    image: PortPic,
+    image: MeanFilter,
     title:
-      "Created my personal website using JavaScript, CSS3 and HTML5, and React",
+      "This application filters images using the principle of 2D filtering and parallel programming.",
     github: "https://github.com/Inathi-M/Portfolio-Website ",
     // demo: "",
   },

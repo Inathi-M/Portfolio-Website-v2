@@ -4,6 +4,13 @@
   gap: 3rem;
 }
 
+.services__container > div {
+  background: var(--color-bg-variant);
+  padding: 2.4rem 5rem;
+  border-radius: 2rem;
+  border: 1px solid transparent;
+}
+
 .service {
   background: var(--color-bg-variant);
   border-radius: 0 0 2rem 2rem;

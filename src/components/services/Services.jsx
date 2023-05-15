@@ -16,19 +16,21 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Adobe photoshop experience.</p>
+              <p>
+                Experience using Adobe Photoshop for Image Editing and Logo
+                Design.
+              </p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Creating logos and branding using Adobe Photoshop.</p>
+              <p>Designing logos and branding using MidJourney AI.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Creating High Fidelity prototypes using Figma.</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Creating High Fidelity prototypes using Sketch.</p>
+              <p>
+                Experience with designing prototypes using Figma, Invinsion and
+                Sketch.
+              </p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
@@ -46,19 +48,21 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Creating mobile applications using Java.</p>
+              <p>
+                Building and deploying mobile applications using Java in Android
+                Studios.
+              </p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Creating mobile applications using Python.</p>
+              <p>Building and deploying mobile applications using Python.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Creating mobile applications using Kotlin.</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Maintaining existing applications.</p>
+              <p>
+                Building and deploying mobile applications using Kotlin in
+                Android Studios.
+              </p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
@@ -76,11 +80,7 @@ const Services = () => {
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Using CSS3 for Frontend Development.</p>
-            </li>
-            <li>
-              <BiCheck className="service__list-icon" />
-              <p>Using HTML5 for Frontend Development.</p>
+              <p>I built my websites using Visual Studio Code.</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
@@ -97,7 +97,7 @@ const Services = () => {
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Using MongoDB/MySql for backend development.</p>
+              <p>Using MongoDB/MySql for Database Management.</p>
             </li>
           </ul>
         </article>

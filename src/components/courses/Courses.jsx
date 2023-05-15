@@ -1,6 +1,8 @@
 import React from "react";
 import "./courses.css";
 import download from "../../assets/download.png";
+import "swiper/css/autoplay";
+import SwiperCore, { Autoplay } from "swiper";
 
 //import Swiper core and required modules
 import { Pagination } from "swiper";
@@ -10,6 +12,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 //Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+SwiperCore.use([Autoplay]);
 const data = [
   {
     avatar: download,
@@ -98,6 +101,10 @@ const Courses = () => {
         spaceBetween={40}
         slidesPerView={1}
         pagination={{ clickable: true }}
+        autoplay={{
+          delay: 500,
+          disableOnInteraction: false,
+        }}
       >
         {data.map(({ avatar, name, review }, index) => {
           return (
