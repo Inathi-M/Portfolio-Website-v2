@@ -12,8 +12,8 @@ const data = [
     image: Snake,
     title:
       "This is a Snake Game created by C# in Visual Studio 2022. I really love this game and had fun making it. ",
-    github: "https://github.com/Inathi-M/Alphabet_Book",
-    demo: "https://youtu.be/Sv8yIM8txeo",
+    github: "https://github.com/Inathi-M/Portfolio-Website",
+    demo: "https://youtu.be/bReGUCyiM-s",
   },
   {
     id: 2,
