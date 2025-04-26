@@ -15,12 +15,12 @@ const About = () => {
             <img src={meabout} alt="Image of me" />
           </div>
         </div>
-        <div className="about content">
+        <div className="about__content">
           <div className="about__cards">
             <article className="about__card">
               <FaAward className="about_icon" />
               <h5>Experience</h5>
-              <small>6+ months Freelance</small>
+              <small>1 year and 9 months.</small>
             </article>
 
             <article className="about__card">
@@ -36,17 +36,11 @@ const About = () => {
             </article>
           </div>
           <p>
-            As a passionate software developer from Cape Town, I'm constantly
-            learning and upskilling myself. I've been teaching myself a variety
-            of programming languages such as JavaScript, C++, and Python, while
-            also familiarizing myself with popular frameworks like Node.js,
-            React, Springboot, and Angular. By building personal projects, I'm
-            gaining practical experience and am determined to make myself an
-            industry-ready software developer.
+            I'm an intermediate Software Engineer at LexisNexis South Africa, with a year and 9 months of experience in the field.
+             I have a strong foundation in C#, Javascript, and React, and the BackEnd. 
+             I am passionate about software development and enjoy tackling complex challenges. 
+             My goal is to continuously learn and grow as a developer while contributing to innovative projects.
           </p>
-          <a href="#contact" className="btn btn-primary">
-            Contact Me
-          </a>
         </div>
       </div>
     </section>

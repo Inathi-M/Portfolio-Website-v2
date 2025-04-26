@@ -135,27 +135,9 @@ const Experience = () => {
               <BsPatchCheckFill classname="experience__details-icon" />
               <div>
                 <h4>
-                  <BsGit size={35} />
-                </h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article classname="experience__details">
-              <BsPatchCheckFill classname="experience__details-icon" />
-              <div>
-                <h4>
-                  <SiCplusplus size={35} />
-                </h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article classname="experience__details">
-              <BsPatchCheckFill classname="experience__details-icon" />
-              <div>
-                <h4>
                   <SiCsharp size={35} />
                 </h4>
-                <small className="text-light">Experienced</small>
+                <small className="text-light">C#</small>
               </div>
             </article>
           </div>

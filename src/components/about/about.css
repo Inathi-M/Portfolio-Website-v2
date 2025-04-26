@@ -3,6 +3,11 @@
   grid-template-columns: 35% 50%;
   gap: 15%;
 }
+.about-content {
+  padding: 20px;      /* Adds space inside the div */
+  margin: 20px auto;  /* Adds space around the div and centers it horizontally */
+  margin-bottom: 1.5rem; /* Adds extra space below the paragraph */
+}
 
 .about__me {
   width: 100%;
@@ -33,6 +38,7 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
+  margin-bottom: 3rem; /* Adds extra space below the paragraph */
 }
 
 .about__card {
@@ -68,6 +74,15 @@
 .about__content {
   margin: 2rem 0 2.6rem;
   color: var(--color-light);
+}
+
+.about__content a {
+  margin-top: 1.5rem;
+  display: inline-block; /* Allows the margin to take effect */
+}
+
+.about-contact {
+  margin-top: 1.5rem; /* Adds extra space above the contact section */
 }
 
 /*========================MEDIA QUERIES (MEDIUM DEVICES)=================*/

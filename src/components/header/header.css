@@ -2,12 +2,22 @@ header {
   height: 100vh;
   padding-top: 2rem;
   overflow: hidden;
+  padding-bottom: 3rem;
 }
 
 .header__container {
   text-align: center;
   height: 100%;
   position: relative;
+  background: linear-gradient(135deg, rgba(31, 31, 56, 0.8), rgba(122, 30, 161, 0.5)); /* Transparent background */
+  color: var(--color-white);
+  line-height: 1.7;
+  border-radius: 20px;
+  width: 100vw;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+  max-width: 90rem;
+  padding-top: 0.5rem;
 }
 
 /*==================CTA===================*/
@@ -18,6 +28,11 @@ header {
   justify-content: center;
 }
 
+.header__container h5{
+  margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
+}
+
 /*==================Header Socials===================*/
 .header__socials {
   display: flex;
@@ -25,7 +40,7 @@ header {
   align-items: center;
   gap: 0.8rem;
   position: absolute;
-  left: 0;
+  left: 2rem;
   bottom: 3rem;
 }
 

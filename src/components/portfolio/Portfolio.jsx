@@ -1,65 +1,51 @@
 import React from "react";
 import "./portfolio.css";
-import Figma from "../../assets/Figma.PNG";
-import TypingTutor from "../../assets/TypingTutor.PNG";
-import PortPic from "../../assets/PortPic.PNG";
-import Snake from "../../assets/Snake.PNG";
-import MeanFilter from "../../assets/MeanFilter.PNG";
 
-const data = [
-  {
-    id: 1,
-    image: Snake,
-    title:
-      "This is a Snake Game created by C# in Visual Studio 2022. I really love this game and had fun making it. ",
-    github: "https://github.com/Inathi-M/Portfolio-Website",
-    demo: "https://youtu.be/bReGUCyiM-s",
-  },
-  {
-    id: 2,
-    image: TypingTutor,
-    title:
-      "  Created the Falling words game using Java and the concept of Parallel Programming.",
-    github: "https://github.com/Inathi-M/Typing-Tutor",
-    demo: "https://youtu.be/vhUFP0zhwVo",
-  },
-  {
-    id: 3,
-    image: MeanFilter,
-    title:
-      "This application filters images using the principle of 2D filtering and parallel programming.",
-    github: "https://github.com/Inathi-M/Portfolio-Website ",
-    // demo: "",
-  },
+const workHistoryData = [
+    {
+        id: 1,
+        company: "LexisNexis South Africa",
+        position: "Software Engineer",
+        duration: "Jan 2024 - Present",
+        description: "Improving backend systems and developing frontend features."
+    },
+    {
+        id: 2,
+        company: "Tech Solutions Inc.",
+        position: "Junior Developer",
+        duration: "Jun 2022 - Dec 2023",
+        description: "Developed and maintained core features for multiple projects."
+    },
+    {
+        id: 3,
+        company: "Innovatech",
+        position: "Intern Developer",
+        duration: "Jan 2021 - May 2022",
+        description: "Assisted in developing user interfaces and performing code reviews."
+    }
 ];
-const Portfolio = () => {
-  return (
-    <section id="portfolio">
-      <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
 
-      <div className="container portfolio__container">
-        {data.map(({ id, image, title, github, demo }) => {
-          return (
-            <article key={id} className="portfolio__item">
-              <div className="portfolio__item-image">
-                <img src={image} alt={title} />
-              </div>
-              <h3>{title}</h3>
-              <div className="portfolio__item-cta">
-                <a href={github} className="btn" target="_blank">
-                  GitHub
-                </a>
-                <a href={demo} className="btn btn-primary" target="_blank">
-                  Live Demo
-                </a>
-              </div>
-            </article>
-          );
-        })}
-      </div>
-    </section>
-  );
+const Portfolio = () => {
+    return (
+        <section id="portfolio">
+            <h5>My Work History</h5>
+            <h2>Experience</h2>
+            <div className="container portfolio__container">
+                {workHistoryData.map(({ id, company, position, duration, description }) => {
+                    return (
+                        <article key={id} className="portfolio__item">
+                            <div className="portfolio__item-content">
+                                <h3>{company}</h3>
+                                <h4>{position}</h4>
+                                <small>{duration}</small>
+                                <p>{description}</p>
+                            </div>
+                        </article>
+                    );
+                })}
+            </div>
+        </section>
+    );
 };
 
 export default Portfolio;
