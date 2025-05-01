@@ -12,7 +12,7 @@ header {
   background: linear-gradient(135deg, rgba(31, 31, 56, 0.8), rgba(122, 30, 161, 0.5)); /* Transparent background */
   color: var(--color-white);
   line-height: 1.7;
-  border-radius: 20px;
+  border-radius: 15px;
   width: 100vw;
   margin: 0 auto;
   margin-bottom: 2rem;

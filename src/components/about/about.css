@@ -1,12 +1,28 @@
+#about {
+  height: 100vh;
+  padding-top: 3rem;
+  overflow: hidden;
+  padding-bottom: 3rem;
+}
+
 .about__container {
   display: grid;
   grid-template-columns: 35% 50%;
   gap: 15%;
+  background: linear-gradient(100deg, rgba(31, 31, 56, 0.8), rgba(122, 30, 161, 0.5));
+  position: relative;
+  line-height: 1.7;
+  margin: 0 auto;
+  max-width: 200rem;
+  margin-bottom: 3rem;
+  border-radius: 15px;
 }
-.about-content {
+.about__content {
   padding: 20px;      /* Adds space inside the div */
   margin: 20px auto;  /* Adds space around the div and centers it horizontally */
   margin-bottom: 1.5rem; /* Adds extra space below the paragraph */
+  padding-bottom: 4rem;
+  padding-left: 1rem;
 }
 
 .about__me {
