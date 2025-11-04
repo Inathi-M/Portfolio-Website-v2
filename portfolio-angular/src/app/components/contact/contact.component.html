@@ -1,0 +1,22 @@
+<section id="contact" class="contact">
+  <div class="container">
+    <p class="section-subtitle">Get In Touch</p>
+    <h2 class="section-title">Contact Me</h2>
+    
+    <div class="contact-grid">
+      <div class="contact-card">
+        <div class="contact-icon">📧</div>
+        <h3>Email</h3>
+        <p>{{ personalInfo.email }}</p>
+        <a [href]="'mailto:' + personalInfo.email" class="btn btn-primary">Send me an E-mail</a>
+      </div>
+      
+      <div class="contact-card">
+        <div class="contact-icon">💬</div>
+        <h3>WhatsApp</h3>
+        <p>{{ personalInfo.phone }}</p>
+        <a [href]="getWhatsAppLink()" target="_blank" class="btn btn-primary">Send me a WhatsApp message</a>
+      </div>
+    </div>
+  </div>
+</section>

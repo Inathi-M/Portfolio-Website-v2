@@ -1,0 +1,70 @@
+.footer {
+  background: linear-gradient(135deg, #2c2c6c 0%, #1a1a4d 100%);
+  color: white;
+  padding: 70px 20px 35px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-brand {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 900;
+  margin-bottom: 35px;
+  background: linear-gradient(to right, #fff, #ccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.footer-menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 35px;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+}
+
+.footer-menu a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 500;
+}
+
+.footer-menu a:hover {
+  color: white;
+  transform: translateY(-2px);
+}
+
+.footer-social {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  margin-bottom: 40px;
+}
+
+.footer-social a {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  font-weight: 500;
+}
+
+.footer-social a:hover {
+  color: #4db5ff;
+}
+
+.copyright {
+  text-align: center;
+  opacity: 0.6;
+  margin-top: 40px;
+  padding-top: 35px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  font-size: 0.95rem;
+}
