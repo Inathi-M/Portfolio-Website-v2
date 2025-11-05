@@ -6,7 +6,7 @@ import { TbBrandCss3 } from "react-icons/tb";
 import { TbBrandJavascript } from "react-icons/tb";
 import { FaJava } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
-import { SiMongodb } from "react-icons/si";
+import { SiMongodb } from "react-icons/si"; 
 import { SiPython } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
 import { BsGit } from "react-icons/bs";
@@ -19,8 +19,7 @@ import { FaDocker } from "react-icons/fa";
 const Experience = () => {
   return (
     <section id="experience">
-      <h5>The Skills I've Gained</h5>
-      <h2>My Experience</h2>
+      <h2>My Techstack</h2>
 
       <div className="container experience__container">
         <div className="experience__frontend">
