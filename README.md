@@ -1,9 +1,5 @@
-# This is my first React Application
+# Portfolio-Website-v2
 
+This is my personal portfolio website, now built as an Angular application (see `portfolio-angular/`), with the original React version kept in `src/`.
 
-The first page is the about page with my Linkedin link, my GitHub and Leetcode links.
-
-You can download my CV from the first page and navigate down to Contacts page to reach out to me
-
-The navigation bar has navigation 
-
+The site includes my LinkedIn, GitHub and LeetCode links, a downloadable CV, my work experience, education, and a contact section to reach out to me.
