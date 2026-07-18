@@ -1,0 +1,98 @@
+header {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+.header__container {
+  text-align: center;
+  position: relative;
+  color: var(--color-white);
+  line-height: 1.7;
+  border-radius: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 60rem;
+  padding: 5rem 3rem 6rem;
+  overflow: hidden;
+}
+
+.header__container::before {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  background: var(--gradient-brand);
+  opacity: 0.18;
+  filter: blur(60px);
+  z-index: -1;
+}
+
+.header__eyebrow {
+  display: inline-block;
+  color: var(--color-secondary);
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+
+.header__name {
+  font-size: 3.6rem;
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.header__role {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+}
+
+/*==============SCROLL DOWN=================*/
+.scroll__down {
+  position: absolute;
+  left: 50%;
+  bottom: 1.5rem;
+  transform: translateX(-50%);
+  font-weight: 400;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-light);
+}
+
+/*========================MEDIA QUERIES (MEDIUM DEVICES)=================*/
+@media screen and (max-width: 1024px) {
+  header {
+    min-height: 80vh;
+  }
+
+  .header__name {
+    font-size: 2.6rem;
+  }
+}
+
+/*========================MEDIA QUERIES (SMALL DEVICES)=================*/
+@media screen and (max-width: 600px) {
+  header {
+    min-height: 90vh;
+  }
+
+  .header__container {
+    padding: 3.5rem 1.5rem 4rem;
+  }
+
+  .header__name {
+    font-size: 2rem;
+  }
+
+  .scroll__down {
+    display: none;
+  }
+}

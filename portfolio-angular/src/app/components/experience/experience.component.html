@@ -1,21 +1,33 @@
-<section id="experience" class="experience">
+<section id="experience">
+  <h5>Where I've Made An Impact</h5>
+  <h2>Experience</h2>
+
   <div class="container">
-    <p class="section-subtitle">The Skills I've Gained</p>
-    <h2 class="section-title">My Experience</h2>
-    
-    <div class="experience-grid">
-      @for (category of skillCategories; track category.title) {
-        <div class="experience-category">
-          <h3>{{ category.title }}</h3>
-          <div class="skills-grid">
-            @for (skill of category.skills; track skill.name) {
-              <div class="skill-item">
-                <span class="skill-name">{{ skill.name }}</span>
-                <span class="skill-level">{{ skill.level }}</span>
-              </div>
-            }
+    <div class="skills__row">
+      @for (skill of skills; track skill) {
+        <span class="skill__pill">{{ skill }}</span>
+      }
+    </div>
+
+    <div class="companies__container">
+      @for (item of companies; track item.company + item.duration) {
+        <article class="company__card glass">
+          <div class="company__head">
+            <div>
+              <h3>{{ item.role }}</h3>
+              <h4>{{ item.company }}</h4>
+            </div>
+            <small class="company__duration">{{ item.duration }}</small>
           </div>
-        </div>
+          <ul class="company__highlights">
+            @for (point of item.highlights; track point) {
+              <li>
+                <svg width="14" height="14" viewBox="0 0 512 512" fill="currentColor"><path d="M173.9 439.4l-166.4-166.4c-9.7-9.7-9.7-25.6 0-35.4l35.4-35.4c9.7-9.7 25.6-9.7 35.4 0l113.5 113.5 226.5-226.5c9.7-9.7 25.6-9.7 35.4 0l35.4 35.4c9.7 9.7 9.7 25.6 0 35.4l-274.9 274.9c-9.8 9.8-25.7 9.8-35.4-.1z"/></svg>
+                <p>{{ point }}</p>
+              </li>
+            }
+          </ul>
+        </article>
       }
     </div>
   </div>

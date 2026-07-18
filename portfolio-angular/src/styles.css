@@ -1,17 +1,219 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
   margin: 0;
   padding: 0;
+  border: 0;
+  outline: 0;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: #333;
+:root {
+  --color-bg: #0a0a17;
+  --color-bg-variant: #14142b;
+  --color-primary: #7f5af0;
+  --color-primary-variant: rgba(127, 90, 240, 0.35);
+  --color-secondary: #2cb1ff;
+  --color-accent: #ff5ea8;
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255, 0.65);
+
+  --gradient-brand: linear-gradient(120deg, var(--color-secondary), var(--color-primary) 55%, var(--color-accent));
+
+  --glass-bg: rgba(255, 255, 255, 0.045);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-blur: blur(18px);
+
+  --transition: all 350ms cubic-bezier(0.22, 1, 0.36, 1);
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary-variant);
+  border-radius: 1rem;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--color-bg);
+  color: var(--color-white);
+  line-height: 1.7;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* Ambient aurora backdrop */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(45rem 30rem at 12% -5%, rgba(127, 90, 240, 0.35), transparent 60%),
+    radial-gradient(40rem 28rem at 90% 10%, rgba(44, 177, 255, 0.25), transparent 60%),
+    radial-gradient(50rem 35rem at 50% 110%, rgba(255, 94, 168, 0.18), transparent 60%),
+    var(--color-bg);
+}
+
+/*================General Styles==================*/
+.container {
+  width: var(--container-width-lg);
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Space Grotesk", "Poppins", sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+section {
+  margin-top: 10rem;
+  scroll-margin-top: 6rem;
+}
+
+section > h5:first-of-type {
+  text-align: center;
+  color: var(--color-secondary);
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+section > h2 {
+  text-align: center;
+  background: var(--gradient-brand);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  margin: 0.6rem 0 3.5rem;
+  font-size: 2.2rem;
+}
+
+.text-light {
+  color: var(--color-light);
+}
+
+a {
+  color: var(--color-secondary);
+  transition: var(--transition);
+}
+
+a:hover {
+  color: var(--color-white);
+}
+
+/*================Glass utility==================*/
+.glass {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+}
+
+/*================Buttons==================*/
+.btn {
+  width: max-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-white);
+  padding: 0.85rem 1.6rem;
+  border-radius: 3rem;
+  cursor: pointer;
+  border: 1px solid var(--glass-border);
+  background: var(--glass-bg);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  font-weight: 500;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-primary);
+  box-shadow: 0 12px 30px -10px rgba(127, 90, 240, 0.55);
+  color: var(--color-white);
+}
+
+.btn-primary {
+  background: var(--gradient-brand);
+  border-color: transparent;
+  box-shadow: 0 8px 24px -8px rgba(127, 90, 240, 0.6);
+}
+
+.btn-primary:hover {
+  box-shadow: 0 16px 34px -8px rgba(127, 90, 240, 0.75);
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*================Scroll reveal==================*/
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  animation: fadeUp 900ms cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/*========================MEDIA QUERIES (MEDIUM DEVICES)=================*/
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+
+  section {
+    margin-top: 7rem;
+  }
+}
+
+/*========================MEDIA QUERIES (MEDIUM DEVICES)=================*/
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+
+  h1 {
+    font-size: 2.2rem;
+  }
 }

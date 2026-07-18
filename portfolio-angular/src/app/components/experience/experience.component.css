@@ -1,139 +1,102 @@
-.experience {
-  background: white;
-  padding: 120px 20px;
+.skills__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-bottom: 3rem;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+.skill__pill {
+  padding: 0.5rem 1.1rem;
+  border-radius: 2rem;
+  font-size: 0.8rem;
+  color: var(--color-light);
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  transition: var(--transition);
 }
 
-.section-subtitle {
-  text-align: center;
-  color: #4db5ff;
-  font-size: 1rem;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 700;
+.skill__pill:hover {
+  color: var(--color-white);
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
 }
 
-.section-title {
-  text-align: center;
-  font-size: 3.5rem;
-  margin-bottom: 70px;
-  color: #2c2c6c;
-  font-weight: 900;
-  position: relative;
-  display: inline-block;
-  width: 100%;
-}
-
-.section-title::after {
-  content: "";
-  position: absolute;
-  bottom: -15px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 5px;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  border-radius: 3px;
-}
-
-.experience-grid {
+.companies__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 60px;
+  gap: 1.6rem;
 }
 
-.experience-category {
-  background: #f9f9ff;
-  padding: 40px;
-  border-radius: 25px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+.company__card {
+  padding: 1.8rem 2rem;
+  border-radius: 1.4rem;
+  border-left: 3px solid var(--color-primary);
+  transition: var(--transition);
 }
 
-.experience-category:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+.company__card:hover {
+  transform: translateY(-6px);
+  border-left-color: var(--color-accent);
+  box-shadow: 0 20px 40px -18px rgba(127, 90, 240, 0.4);
 }
 
-.experience-category h3 {
-  font-size: 2.2rem;
-  margin-bottom: 35px;
-  color: #2c2c6c;
-  text-align: center;
-  font-weight: 800;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-}
-
-.skill-item {
-  background: white;
-  padding: 20px;
-  border-radius: 15px;
+.company__head {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  border: 2px solid transparent;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
 }
 
-.skill-item:hover {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  transform: translateX(10px);
-  border-color: white;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+.company__head h3 {
+  font-size: 1.1rem;
 }
 
-.skill-name {
-  font-weight: 700;
-  font-size: 1.05rem;
-}
-
-.skill-level {
+.company__head h4 {
   font-size: 0.9rem;
-  opacity: 0.9;
-  padding: 5px 12px;
-  background: rgba(0, 0, 0, 0.05);
-  border-radius: 20px;
+  font-weight: 400;
+  color: var(--color-secondary);
+  margin-top: 0.2rem;
 }
 
-.skill-item:hover .skill-level {
-  background: rgba(255, 255, 255, 0.2);
+.company__duration {
+  white-space: nowrap;
+  color: var(--color-light);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.7rem;
+  margin-top: 0.2rem;
 }
 
-@media (max-width: 768px) {
-  .experience {
-    padding: 80px 20px;
-  }
+.company__highlights li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.7rem;
+  margin-bottom: 0.7rem;
+}
 
-  .experience-grid {
+.company__highlights svg {
+  color: var(--color-secondary);
+  margin-top: 4px;
+  flex-shrink: 0;
+}
+
+.company__highlights p {
+  font-size: 0.88rem;
+  color: var(--color-light);
+}
+
+/*========================MEDIA QUERIES (MEDIUM DEVICES)=================*/
+@media screen and (max-width: 1024px) {
+  .companies__container {
     grid-template-columns: 1fr;
   }
+}
 
-  .skills-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .section-title {
-    font-size: 2.5rem;
-  }
-
-  .experience-category h3 {
-    font-size: 1.5rem;
+/*========================MEDIA QUERIES (MEDIUM DEVICES)=================*/
+@media screen and (max-width: 600px) {
+  .company__head {
+    flex-direction: column;
   }
 }
